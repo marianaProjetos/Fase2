@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mercado Exemplo - Cadastro e Agendamento</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><strong>Mercado Exemplo</strong></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <div class="agendamento-container">
+      <h2>Cadastro e Agendamento</h2>
+
+      <form id="formAgendamento" novalidate>
+        <fieldset>
+          <legend>Dados do Cliente</legend>
+
+          <label for="nome">Nome completo <span style="color: red;">*</span></label>
+          <input type="text" id="nome" name="nome" placeholder="Digite..." required />
+
+          <label for="cpf">CPF <span style="color: red;">*</span></label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required />
+
+          <label>Sexo <span style="color: red;">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="sexo" value="Masculino" required /> Masculino</label>
+            <label><input type="radio" name="sexo" value="Feminino" /> Feminino</label>
+            <label><input type="radio" name="sexo" value="Outro" /> Outro</label>
+          </div>
+
+          <label for="telefone">Telefone <span style="color: red;">*</span></label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" required />
+
+          <label for="email">E-mail <span style="color: red;">*</span></label>
+          <input type="email" id="email" name="email" placeholder="email@exemplo.com" required />
+
+          <label for="endereco">Endereço completo</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Digite..." />
+        </fieldset>
+
+        <fieldset>
+          <legend>Escolha do Serviço</legend>
+
+          <label>Tipo de agendamento <span style="color: red;">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="tipoServico" value="Retirada" required /> Retirada no local</label>
+            <label><input type="radio" name="tipoServico" value="Tele-entrega" /> Tele-entrega</label>
+          </div>
+
+          <label for="data">Data do agendamento <span style="color: red;">*</span></label>
+          <input type="date" id="data" name="data" required min="" />
+
+          <label for="hora">Hora do agendamento <span style="color: red;">*</span></label>
+          <input type="time" id="hora" name="hora" required min="08:00" max="20:00" />
+
+          <small>* Horários disponíveis das 08:00 às 20:00</small>
+        </fieldset>
+
+        <button type="submit" class="btn btn-success" style="margin-top: 15px;">Enviar Cadastro e Agendamento</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p><strong>Email:</strong><br /> suporte@mercado.com</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p><strong>Telefone:</strong><br /> (00) 99999-9999</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p><strong>Endereço:</strong><br /> Av. Exemplo, 123 - Passo Fundo/RS</p>
+        </div>
+      </div>
+
+      <hr class="divisor" />
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="trademark">@ 2025 Mercado. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

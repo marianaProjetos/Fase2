@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Exemplo</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><strong>Mercado Exemplo</strong></a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="agendamento.html">Agendamento</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+
+  <div class="container principal">
+
+    <h2>Produtos - Hortifruti</h2>
+
+    <div id="carrossel-hortifruti" class="carousel slide" data-ride="carousel" data-interval="false">
+      <!-- Itens -->
+      <div class="carousel-inner">
+
+        <div class="item active text-center">
+          <h3>Banana Prata</h3>
+          <img src="../imagens/banana.png" alt="Banana Prata" width="150" height="150">
+          <p>Banana fresca por quilo.</p>
+          <p>R$ 3,99 / kg</p>
+        </div>
+
+        <div class="item text-center">
+          <h3>Tomate Italiano</h3>
+          <img src="imagens/tomate.png" alt="Tomate Italiano" width="150" height="150">
+          <p>Tomate maduro e selecionado.</p>
+          <p>R$ 5,49 / kg</p>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <a class="left carousel-control controle-personalizado" href="#carrossel-hortifruti" role="button" data-slide="prev" style="background-image:none;">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:#2E7D32; font-size: 30px;"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control controle-personalizado" href="#carrossel-hortifruti" role="button" data-slide="next" style="background-image:none;">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:#2E7D32; font-size: 30px;"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <hr>
+
+    <h2>Produtos - Padaria</h2>
+
+    <div id="carrossel-padaria" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner">
+
+        <div class="item active text-center">
+          <h3>Pão Francês</h3>
+          <img src="imagens/pao.png" alt="Pão Francês" width="180" height="150">
+          <p>Pão quentinho feito no dia.</p>
+          <p>R$ 8,90 / kg</p>
+        </div>
+
+        <div class="item text-center">
+          <h3>Bolo de Fubá</h3>
+          <img src="imagens/bolo.png" alt="Bolo de Cenoura" width="200" height="150">
+          <p>Bolo caseiro de fubá.</p>
+          <p>R$ 12,00 (unidade)</p>
+        </div>
+
+      </div>
+
+      <a class="left carousel-control controle-personalizado" href="#carrossel-padaria" role="button" data-slide="prev" style="background-image:none;">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:#2E7D32; font-size: 30px;"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control controle-personalizado" href="#carrossel-padaria" role="button" data-slide="next" style="background-image:none;">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:#2E7D32; font-size: 30px;"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <hr>
+
+    <h2>Produtos - Mercearia</h2>
+
+    <div id="carrossel-mercearia" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner">
+
+        <div class="item active text-center">
+          <h3>Arroz Namorado Branco 1kg</h3>
+          <img src="imagens/arroz.png" alt="Arroz Branco" width="150" height="150">
+          <p>Arroz branco, marca Namorado, pacote com 1kg.</p>
+          <p>R$ 5,90</p>
+        </div>
+
+        <div class="item text-center">
+          <h3>Óleo de Soja 900ml</h3>
+          <img src="imagens/oleo.png" alt="Óleo de Soja" width="150" height="150">
+          <p>Óleo de soja refinado.</p>
+          <p>R$ 6,50</p>
+        </div>
+
+      </div>
+
+      <a class="left carousel-control controle-personalizado" href="#carrossel-mercearia" role="button" data-slide="prev" style="background-image:none;">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:#2E7D32; font-size: 30px;"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control controle-personalizado" href="#carrossel-mercearia" role="button" data-slide="next" style="background-image:none;">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:#2E7D32; font-size: 30px;"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS (necessário para o carrossel funcionar) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+<footer class="rodape">
+
+  <div class="container">
+
+    <div class="row text-center">
+
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <p><strong>Email:</strong><br> suporte@mercado.com</p>
+      </div>
+
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <p><strong>Telefone:</strong><br> (00) 99999-9999</p>
+      </div>
+
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <p><strong>Endereço:</strong><br> Av. Exemplo, 123 - Passo Fundo/RS</p>
+      </div>
+
+    </div>
+
+    <hr class="divisor">
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="trademark">@ 2025 Mercado. Todos os direitos reservados.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</html>
